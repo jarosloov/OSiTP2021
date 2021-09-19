@@ -1,0 +1,39 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	background: rgb(28, 38, 56);
+}
+
+.countdown {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.time-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: rgb(149, 224, 204);
+	font-family: sans-serif;
+	padding: 0 30px;
+	border-right: 3px solid rgb(57, 112, 122);
+	user-select: none;
+}
+
+.time-section:last-child {
+	border: none;
+}
+
+.count {
+	font-size: 50px;
+}
+
+.units {
+	font-size: 15px;
+}

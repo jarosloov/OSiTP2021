@@ -17,7 +17,6 @@ void btn_handler(void *arg)
   xtimer_usleep(100000);
 }
 
-
 int main(void)
 {
   // Инициализация пина PA0, к которому подключена кнопка, как источника прерывания.
@@ -26,8 +25,10 @@ int main(void)
   // NULL - ничего не передаем в аргументах
   gpio_init_int(GPIO_PIN(PORT_A, 0), GPIO_IN, GPIO_BOTH, btn_handler, NULL);
   // Инициализация пина PC8 на выход
-	gpio_init(GPIO_PIN(PORT_C, 8), GPIO_OUT);
+  gpio_init(GPIO_PIN(PORT_C, 8), GPIO_OUT);
 
-  while(1){}
+  while (1)
+  {
+  }
   return 0;
 }
